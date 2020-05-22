@@ -180,6 +180,7 @@ const SignIn: React.FC = () => {
               type="button"
               onClick={handleToggle}
               className="passwordToggle"
+              tabIndex="-1"
             >
               {visible ? <FiEye size={20} /> : <FiEyeOff size={20} />}
             </button>
