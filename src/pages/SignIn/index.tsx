@@ -58,9 +58,9 @@ const SignIn: React.FC = () => {
 
         const schema = Yup.object().shape({
           email: Yup.string()
-            .email('Digite um e-mail válido')
-            .required('Digite seu e-mail'),
-          password: Yup.string().required('Digite sua senha'),
+            .email('Input a valid email')
+            .required('Enter your email adress'),
+          password: Yup.string().required('Enter your password'),
         });
 
         await schema.validate(signInForm, {
@@ -156,7 +156,7 @@ const SignIn: React.FC = () => {
               name="email"
               id="email"
               type="text"
-              placeholder="E-mail"
+              placeholder="Email"
               value={signInForm.email}
               onChange={handleInputChange}
               onFocus={() => handleInputFocus('email')}
